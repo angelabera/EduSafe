@@ -1,6 +1,6 @@
-#  EduSafe - Student Early-Risk Identification Dashboard
+#  EduSafe - Student DropOut Identification Dashboard
 
-A cutting-edge, intelligent dashboard for identifying and monitoring at-risk students through data-driven analysis. EduSafe processes attendance, assessment, and attempt records to provide educators with actionable insights and early warning signals.
+A cutting-edge, intelligent dashboard for identifying and monitoring at-risk dropout students through data-driven analysis. EduSafe processes attendance, assessment, and attempt records to provide educators with actionable insights and early warning signals.
 
 ![React](https://img.shields.io/badge/React-19.2-blue?style=flat-square&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
