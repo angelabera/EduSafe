@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react';
-import { Shield } from 'lucide-react';
+import { Shield, Zap, Lock, Activity } from 'lucide-react';
 import { CSVUpload, StudentTable, RiskChart, AlertBanner } from './components';
 import { analyzeAllStudents, getRiskDistribution } from './utils/riskCalculator';
 import type { 
@@ -67,16 +67,15 @@ function App() {
       {/* Hero Section */}
       <header className="app-hero">
         <div className="hero-background">
-          <div className="hero-blob blob-1"></div>
-          <div className="hero-blob blob-2"></div>
-          <div className="hero-grid"></div>
+          <div className="flow-field">
+            <div className="flow-wave wave-1"></div>
+            <div className="flow-wave wave-2"></div>
+            <div className="flow-wave wave-3"></div>
+          </div>
+          <div className="hero-overlay"></div>
         </div>
         
         <div className="hero-content">
-          <div className="hero-badge">
-            <span className="pulse-dot"></span>
-            AI-Powered Analytics
-          </div>
           <div className="logo-container">
             <div className="logo-icon-wrapper">
               <Shield size={56} strokeWidth={2} />
@@ -88,9 +87,24 @@ function App() {
           <p className="hero-subtitle">
             Next-Generation Student Dropout Risk Identification System
           </p>
-          <p className="hero-description">
-            Proactively identify at-risk students using advanced behavioral analytics and performance metrics.
-          </p>
+          
+          <div className="hero-cards">
+            <div className="hero-card">
+              <div className="card-icon"><Activity size={24} /></div>
+              <h3>Early Detection</h3>
+              <p>Identify at-risk patterns months before they become critical issues.</p>
+            </div>
+            <div className="hero-card">
+              <div className="card-icon"><Zap size={24} /></div>
+              <h3>Instant Analysis</h3>
+              <p>Process thousands of student records in seconds with real-time scoring.</p>
+            </div>
+            <div className="hero-card">
+              <div className="card-icon"><Lock size={24} /></div>
+              <h3>Secure & Private</h3>
+              <p>Enterprise-grade data protection ensuring student privacy at all times.</p>
+            </div>
+          </div>
         </div>
       </header>
 
