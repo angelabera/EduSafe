@@ -64,13 +64,34 @@ function App() {
 
   return (
     <div className="app">
-      {/* Header */}
-      <header className="app-header">
-        <div className="logo">
-          <Shield size={32} />
-          <h1>EduSafe</h1>
+      {/* Hero Section */}
+      <header className="app-hero">
+        <div className="hero-background">
+          <div className="hero-blob blob-1"></div>
+          <div className="hero-blob blob-2"></div>
+          <div className="hero-grid"></div>
         </div>
-        <p className="tagline">Student DropOut Identification Dashboard</p>
+        
+        <div className="hero-content">
+          <div className="hero-badge">
+            <span className="pulse-dot"></span>
+            AI-Powered Analytics
+          </div>
+          <div className="logo-container">
+            <div className="logo-icon-wrapper">
+              <Shield size={56} strokeWidth={2} />
+            </div>
+            <h1 className="hero-title">
+              Edu<span className="text-gradient">Safe</span>
+            </h1>
+          </div>
+          <p className="hero-subtitle">
+            Next-Generation Student Dropout Risk Identification System
+          </p>
+          <p className="hero-description">
+            Proactively identify at-risk students using advanced behavioral analytics and performance metrics.
+          </p>
+        </div>
       </header>
 
       <main className="app-main">
