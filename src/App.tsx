@@ -68,7 +68,8 @@ function App() {
       {/* Hero Section */}
       <header className="app-hero">
         <div className="hero-background">
-          <img src={heroBg} className="hero-bg-svg" alt="" />
+          <img src={heroBg} className="hero-bg-svg layer-1" alt="" />
+          <img src={heroBg} className="hero-bg-svg layer-2" alt="" />
           <div className="hero-overlay"></div>
         </div>
         
