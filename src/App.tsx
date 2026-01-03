@@ -230,18 +230,62 @@ function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <div className="app-footer-content">
-          <div className="footer-brand">
-            <Shield size={24} />
-            Edu<strong>Safe</strong>
+        <div className="footer-container">
+          <div className="footer-grid">
+            <div className="footer-brand-section">
+              <div className="footer-logo">
+                <Shield size={32} className="logo-icon" />
+                <span>Edu<strong>Safe</strong></span>
+              </div>
+              <p className="footer-tagline">
+                Empowering educators with data-driven insights to ensure every student succeeds.
+              </p>
+              <div className="footer-socials">
+                <a href="#" aria-label="Twitter"><Activity size={20} /></a>
+                <a href="#" aria-label="LinkedIn"><Zap size={20} /></a>
+                <a href="#" aria-label="GitHub"><Lock size={20} /></a>
+              </div>
+            </div>
+
+            <div className="footer-nav-group">
+              <h4>Platform</h4>
+              <ul>
+                <li><a href="#upload">Data Upload</a></li>
+                <li><a href="#">Risk Analysis</a></li>
+                <li><a href="#">Student Profiles</a></li>
+                <li><a href="#">Reporting</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-nav-group">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Security</a></li>
+              </ul>
+            </div>
+
+            <div className="footer-nav-group">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="mailto:support@edusafe.com">support@edusafe.com</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">System Status</a></li>
+              </ul>
+            </div>
           </div>
-          <ul className="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Support</a></li>
-          </ul>
+
           <div className="footer-bottom">
-            <p>© <span className="footer-year">2026</span> EduSafe | Built with 💙 by Angela Bera</p>
+            <div className="footer-copyright">
+              © 2026 EduSafe. Built with 💙 by <strong>Angela Bera</strong>
+            </div>
+            <div className="footer-legal">
+              <a href="#">Terms</a>
+              <a href="#">Privacy</a>
+              <a href="#">Cookies</a>
+            </div>
           </div>
         </div>
       </footer>
