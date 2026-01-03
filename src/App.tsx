@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback } from 'react';
 import { Shield, Zap, Lock, Activity } from 'lucide-react';
 import { CSVUpload, StudentTable, RiskChart, AlertBanner } from './components';
 import { analyzeAllStudents, getRiskDistribution } from './utils/riskCalculator';
+import heroBg from './assets/hero-bg.svg';
 import type { 
   AttendanceRecord, 
   AssessmentRecord, 
@@ -67,11 +68,7 @@ function App() {
       {/* Hero Section */}
       <header className="app-hero">
         <div className="hero-background">
-          <div className="flow-field">
-            <div className="flow-wave wave-1"></div>
-            <div className="flow-wave wave-2"></div>
-            <div className="flow-wave wave-3"></div>
-          </div>
+          <img src={heroBg} className="hero-bg-svg" alt="" />
           <div className="hero-overlay"></div>
         </div>
         
